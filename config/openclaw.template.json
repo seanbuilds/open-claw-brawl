@@ -1,0 +1,68 @@
+{
+  "_comment": "OpenClaw validated config template — open-claw-brawl project",
+  "_warning": "Never set contextLength above 8192. Never change model from ollama/llama3.2:latest.",
+  "version": "1.0",
+  "defaults": {
+    "model": "ollama/llama3.2:latest",
+    "contextLength": 8192,
+    "temperature": 0.7,
+    "maxTokens": 1024
+  },
+  "ollama": {
+    "baseUrl": "http://127.0.0.1:11434",
+    "apiKey": "ollama-local"
+  },
+  "gateway": {
+    "port": 3000,
+    "host": "127.0.0.1"
+  },
+  "agents": [
+    {
+      "name": "supervisor",
+      "model": "ollama/llama3.2:latest",
+      "contextLength": 8192,
+      "role": "orchestrator"
+    },
+    {
+      "name": "researcher",
+      "model": "ollama/llama3.2:latest",
+      "contextLength": 8192,
+      "role": "research"
+    },
+    {
+      "name": "writer",
+      "model": "ollama/llama3.2:latest",
+      "contextLength": 8192,
+      "role": "content"
+    },
+    {
+      "name": "analyst",
+      "model": "ollama/llama3.2:latest",
+      "contextLength": 8192,
+      "role": "analysis"
+    },
+    {
+      "name": "reviewer",
+      "model": "ollama/llama3.2:latest",
+      "contextLength": 8192,
+      "role": "review"
+    },
+    {
+      "name": "executor",
+      "model": "ollama/llama3.2:latest",
+      "contextLength": 8192,
+      "role": "execution"
+    }
+  ],
+  "channels": {
+    "whatsapp": {
+      "enabled": true,
+      "credentialsPath": "~/.openclaw/credentials/whatsapp/"
+    }
+  },
+  "providers": {
+    "openai": { "enabled": false },
+    "anthropic": { "enabled": false },
+    "google": { "enabled": false }
+  }
+}

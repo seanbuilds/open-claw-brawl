@@ -1,0 +1,33 @@
+{
+  "name": "open-claw-brawl",
+  "version": "0.1.0",
+  "description": "Battle-hardened OpenClaw deployment on macOS — local-first, zero cloud, WhatsApp-powered multi-agent AI swarms.",
+  "keywords": [
+    "openclaw",
+    "ollama",
+    "llama",
+    "multi-agent",
+    "whatsapp",
+    "local-llm",
+    "macos",
+    "ai-swarm"
+  ],
+  "author": "Sean Tyler",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/open-claw-brawl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/open-claw-brawl/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/open-claw-brawl#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "preflight": "bash scripts/preflight.sh",
+    "verify": "bash scripts/verify.sh"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+.npm
+
+# OpenClaw runtime & credentials — NEVER commit these
+~/.openclaw/credentials/
+.openclaw/credentials/
+*.session
+*.qr.png
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+secrets/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+
+# Editor
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Temp
+tmp/
+temp/
+.cache/
